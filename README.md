@@ -2,9 +2,8 @@
 
 ![1689457849365](image/README/1689457849365.png)
 
-
 **Description**:
-VinlandSagaGame is an adventurous 2D game set in the captivating world of Vinland Saga. Inspired by the popular manga and anime series, the game brings the epic Viking saga to life, allowing players to embark on thrilling quests, battle fierce foes, and explore the vast landscapes of ancient Scandinavia.
+VinlandSagaGame is an adventurous 2D game set in the captivating world of Vinland Saga. Inspired by the popular manga and anime series, the game brings the epic Viking saga to life, allowing player to embark on thrilling quests, battle fierce foes, and explore the vast landscapes of ancient Scandinavia.
 
 **Gameplay:**
 As the player, you take on the role of a brave Viking warrior seeking glory and honor in the treacherous world of Vinland Saga. Your journey begins in a small Viking village, where you learn the ways of the warrior, gather resources, and interact with other characters. As you progress, you'll join a band of fellow Vikings and set sail across the sea to discover new lands and hidden secrets.
