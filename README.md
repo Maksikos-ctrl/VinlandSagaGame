@@ -1,6 +1,6 @@
 # VinlandSagaGame
 
-![1689630000600](image/README/1689630000600.png)![1689630007744](image/README/1689630007744.png)
+![1689630007744](https://file+.vscode-resource.vscode-cdn.net/c%3A/Users/irina/OneDrive/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/programming/PYTHON/PYTHON/PYTHON%20GAMES/VinlandSaga/image/README/1689630007744.png)![1689630000600](image/README/1689630000600.png)
 
 **Description**:
 VinlandSagaGame is an adventurous 2D game set in the captivating world of Vinland Saga. Inspired by the popular manga and anime series, the game brings the epic Viking saga to life, allowing player to embark on thrilling quests, battle fierce foes, and explore the vast landscapes of ancient Scandinavia.
