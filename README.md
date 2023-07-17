@@ -1,6 +1,6 @@
 # VinlandSagaGame
 
-![1689457849365](image/README/1689457849365.png)
+![1689630000600](image/README/1689630000600.png)![1689630007744](image/README/1689630007744.png)
 
 **Description**:
 VinlandSagaGame is an adventurous 2D game set in the captivating world of Vinland Saga. Inspired by the popular manga and anime series, the game brings the epic Viking saga to life, allowing player to embark on thrilling quests, battle fierce foes, and explore the vast landscapes of ancient Scandinavia.
