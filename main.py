@@ -9,7 +9,10 @@ from level import Level
 
 bg = pygame.image.load('assets/banner.png')
 bg = pygame.transform.scale(bg, (bg.get_width() * 1.8, bg.get_height() * 1.8))
+icon = pygame.image.load('assets/ico.jpg')
 
+
+pygame.display.set_icon(icon)
 
 clock = pygame.time.Clock()
 

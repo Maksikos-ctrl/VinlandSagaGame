@@ -1,7 +1,7 @@
 import pygame
 from conf import *
 
-PLAYER_SPEED = 5
+PLAYER_SPEED = 7
 IMAGE_SCALE_FACTOR = 1.8
 
 
@@ -11,7 +11,7 @@ class Player(pygame.sprite.Sprite):
         self.image = pygame.image.load('assets/enemy_vikings.png').convert_alpha()
         self.image = pygame.transform.scale(self.image, (int(self.image.get_width() * IMAGE_SCALE_FACTOR), int(self.image.get_height() * IMAGE_SCALE_FACTOR)))
         self.rect = self.image.get_rect(topleft=pos)
-
+        self.hitbox = self.rect.inflate(0, -26) 
         self.direction = pygame.math.Vector2()
         self.speed = PLAYER_SPEED
         self.obstacles_sprites = obstacles_sprites
@@ -37,27 +37,28 @@ class Player(pygame.sprite.Sprite):
         if self.direction.magnitude() != 0:
             self.direction = self.direction.normalize()
 
-        self.rect.x += self.direction.x * self.speed
+        self.hitbox.x += self.direction.x * self.speed
         self.collision("horizontal")
-        self.rect.y += self.direction.y * self.speed
+        self.hitbox.y += self.direction.y * self.speed
         self.collision("vertical")
+        self.rect.center = self.hitbox.center
 
     def collision(self, direction):
         if direction == "horizontal":
             for sprite in self.obstacles_sprites:
-                if self.rect.colliderect(sprite.rect):
+                if self.hitbox.colliderect(sprite.hitbox):
                     if self.direction.x > 0:
-                        self.rect.right = sprite.rect.left
+                        self.hitbox.right = sprite.hitbox.left
                     elif self.direction.x < 0:
-                        self.rect.left = sprite.rect.right
+                        self.hitbox.left = sprite.hitbox.right
 
         if direction == "vertical":
             for sprite in self.obstacles_sprites:
-                if self.rect.colliderect(sprite.rect):
+                if self.hitbox.colliderect(sprite.hitbox):
                     if self.direction.y > 0:
-                        self.rect.bottom = sprite.rect.top
+                        self.hitbox.bottom = sprite.hitbox.top
                     elif self.direction.y < 0:
-                        self.rect.top = sprite.rect.bottom
+                        self.hitbox.top = sprite.hitbox.bottom
 
     def update(self):
         self.handle_input()
