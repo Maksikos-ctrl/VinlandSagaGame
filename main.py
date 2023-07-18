@@ -5,6 +5,7 @@ from colors import *
 from debug import debug
 from font import font
 from level import Level
+from support import *
 
 
 bg = pygame.image.load('assets/banner.png')

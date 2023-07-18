@@ -2,14 +2,14 @@ import pygame
 from conf import *
 
 PLAYER_SPEED = 7
-IMAGE_SCALE_FACTOR = 1.8
+# IMAGE_SCALE_FACTOR = 1.2
 
 
 class Player(pygame.sprite.Sprite):
     def __init__(self, pos, groups, obstacles_sprites):
         super().__init__(groups)
-        self.image = pygame.image.load('assets/enemy_vikings.png').convert_alpha()
-        self.image = pygame.transform.scale(self.image, (int(self.image.get_width() * IMAGE_SCALE_FACTOR), int(self.image.get_height() * IMAGE_SCALE_FACTOR)))
+        self.image = pygame.image.load('assets/viking.png').convert_alpha()
+        self.image = pygame.transform.scale(self.image, (int(self.image.get_width()), int(self.image.get_height())))
         self.rect = self.image.get_rect(topleft=pos)
         self.hitbox = self.rect.inflate(0, -26) 
         self.direction = pygame.math.Vector2()
